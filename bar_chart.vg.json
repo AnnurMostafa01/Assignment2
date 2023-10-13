@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    
+    "data": {
+      "url": "volcano.csv"
+    },
+    "width": 400,
+  "height": 400,
+  
+    "mark": "bar",
+  
+    "encoding": {
+        "x": {
+            "field": "Dominant Rock Type", "type": "nominal",
+            "axis": {
+              "domain": false,
+              "ticks": false,
+              "labelAngle": 90,
+              "labelPadding": 10
+            }
+          },
+          "y": {
+            "field": "Elevation (Meters)", "type": "quantitative",
+            "axis": {
+              "gridColor": {
+                "condition": {"test": "datum.value === 0", "value": "black"},
+                "value": "#ddd"
+              }
+            }
+          }
+
+        }
+
+
+
+
+
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "volcano.csv"},
+  "width": 600,
+  "height": 400,
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "Type", "type": "nominal"},
+    "y": {"field": "Elevation (Meters)", "type": "quantitative"}
+  }
+}
